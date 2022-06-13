@@ -3,36 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicon-32x32.png">
     <title>Frontend Mentor | E-commerce product page</title>
     <link rel="stylesheet" href="{{ url_for('static', filename="style/main.css") }}">
 	<script defer src="{{ url_for('static', filename='js/app.js') }}"></script>
 </head>
 <body>
+	<div id="content">
+		<nav id="navbar">
+			<div id="nav-tabs">
+				<img id="logo" src="{{ url_for('static', filename='images/logo.svg') }}" alt="Sneakers">
+				<ul>
+					<li><a class="nav-element" href="">Collections</a></li>
+					<li><a class="nav-element" href="">Men</a></li>
+					<li><a class="nav-element" href="">Women</a></li>
+					<li><a class="nav-element" href="">About</a></li>
+					<li><a class="nav-element" href="">Contact</a></li>
+				</ul>
+			</div>
+			<div id="cart-profile-container">
+				<img id="cart" src="{{ url_for('static', filename='images/icon-cart.svg') }}" alt="cart">
+				<img id="avatar" src="{{ url_for('static', filename='images/image-avatar.png') }}" alt="avatar">
+			</div>
+		</nav>
+	Sneaker Company
 
-Collections
-Men
-Women
-About
-Contact
+	Fall Limited Edition Sneakers
 
-Sneaker Company
+	These low-profile sneakers are your perfect casual wear companion. Featuring a
+	durable rubber outer sole, they’ll withstand everything the weather can offer.
 
-Fall Limited Edition Sneakers
+	$125.00
+	50%
+	$250.00
 
-These low-profile sneakers are your perfect casual wear companion. Featuring a
-durable rubber outer sole, they’ll withstand everything the weather can offer.
+	0
+	Add to cart
 
-$125.00
-50%
-$250.00
+	    <div class="attribution">
+	    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+	    Coded by <a href="#">Your Name Here</a>.
+	    </div>
 
-0
-Add to cart
+	</div>
 
-    <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-    </div>
 </body>
 </html>
