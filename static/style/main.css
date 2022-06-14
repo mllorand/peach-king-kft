@@ -7,16 +7,20 @@
     --light-grayish-blue: hsl(223, 64%, 98%);
 }
 
-
-
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 16px;
 }
 
-#navbar, #nav-tabs, #nav-tabs ul, #cart-profile-container {
-    display: flex;
+button, input {
+    border-radius: 5px;
+    padding: 10px;
+}
 
+#navbar, #nav-tabs, #nav-tabs ul, #cart-profile-container, .main-content, .photo-gallery, .description {
+    display: flex;
 }
 
 #navbar {
@@ -72,5 +76,59 @@ a {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+.photo-gallery {
+    max-width: 50%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description {
+    box-sizing: border-box;
+    max-width: 50%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.product-image {
+    box-sizing: border-box;
+    width: 70%;
+    border-radius: 10px;
+
+}
+
+.main-content {
+    margin-top: 6%;
+}
+
+.description > * {
+    padding: 10px;
+}
+
+.main-photo {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.small-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 6%;
+}
+
+.small-images > * {
+    max-width: 20%;
+    border-radius: 10px;
 }
 
