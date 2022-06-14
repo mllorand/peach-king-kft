@@ -30,8 +30,8 @@ a {
 }
 
 #navbar, #nav-tabs, #nav-tabs ul, #cart-profile-container, .main-content, .photo-gallery, .description {
+    align-items: center;
     display: flex;
-
 }
 
 .attribution {
@@ -96,6 +96,20 @@ a {
     max-width: 20%;
 }
 
+.nav-element::after {
+    background: var(--orange);
+    content: '';
+    display: block;
+    height: 3px;
+    margin: auto;
+    transition: 0.5s;
+    width: 0;
+}
+
+.nav-element:hover::after {
+    width: 100%;
+}
+
 #navbar {
     align-items: center;
     border-bottom: 1px solid var(--light-grayish-blue);
@@ -108,21 +122,27 @@ a {
 }
 
 #nav-tabs ul {
-    gap: 10%;
+    justify-content: space-between;
+    width: 40%;
+}
+
+#nav-tabs {
+    flex-basis: 92%;
+    font-size: clamp(12px, 1vw, 50px);
 }
 
 #avatar {
-    height: clamp(12px, 10vh, 50px);
+    width: clamp(20px, 5vw, 50px);
 }
 
 #cart {
-    height: clamp(6px, 4vh, 25px);
+    width: clamp(15px, 2vw, 25px);
 }
 
 #cart-profile-container {
     align-items: center;
     justify-content: space-between;
-    width: 8%;
+    flex-basis: 8%;
 }
 
 #content {
