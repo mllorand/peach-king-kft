@@ -7,6 +7,8 @@
     --light-grayish-blue: hsl(223, 64%, 98%);
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +21,7 @@ button, input {
     padding: 10px;
 }
 
-#navbar, #nav-tabs, #nav-tabs ul, #cart-profile-container {
+#navbar, #nav-tabs, #nav-tabs ul, #cart-profile-container, .main-content, .photo-gallery, .description {
     display: flex;
 
 }
@@ -125,7 +127,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 6%;
+    padding-top: 4%;
 }
 
 .small-images > * {
