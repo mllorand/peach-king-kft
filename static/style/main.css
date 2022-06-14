@@ -30,8 +30,22 @@ a {
 }
 
 #navbar, #nav-tabs, #nav-tabs ul, #cart-profile-container, .main-content, .photo-gallery, .description {
-    align-items: center;
     display: flex;
+}
+
+.add-to-cart-btn {
+    flex-basis: 57%;
+    background: var(--orange);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+
+.add-to-cart-btn:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+    box-shadow: 0 20px 10px var(--pale-orange);
 }
 
 .attribution {
@@ -48,13 +62,56 @@ a {
     flex-direction: column;
     justify-content: center;
     max-width: 50%;
+    height: 60vh;
 }
+
+.brand-name {
+    color: var(--orange);
+    font-weight: 700;
+    font-size: clamp(12px, 1vw, 40px);
+    text-transform: uppercase;
+}
+
+.product-title {
+    font-size: clamp(20px, 3vw, 70px);
+}
+
+.product-price {
+    font-size: clamp(20px, 2vw, 70px);
+}
+
+.product-discount-label {
+    margin-left: 2%;
+    background: var(--pale-orange);
+    color: var(--orange);
+    font-weight: 700;
+    padding: 0.5% 1%;
+    border-radius: 5px;
+}
+
+.product-description {
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+    font-size: clamp(12px, 1.3vw, 40px);
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.product-original-price {
+    font-weight: 700;
+    color: var(--grayish-blue);
+}
+
 
 .description {
     box-sizing: border-box;
     max-width: 50%;
     justify-content: center;
     flex-direction: column;
+    height: 40vh;
 }
 
 .product-image {
@@ -65,6 +122,8 @@ a {
 
 .main-content {
     margin-top: 6%;
+    align-items: center;
+    height: 60vh;
 }
 
 .description > * {
@@ -74,14 +133,20 @@ a {
 .main-photo {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     margin: 0 auto;
     max-width: 70%;
+    height: 60vh;
+    align-items: center;
 }
 
 .product-image {
     border-radius: 20px;
     width: 100%;
+}
+
+.product-select {
+    display: flex;
+    justify-content: space-between;
 }
 
 .small-images {
@@ -94,6 +159,24 @@ a {
 .small-images > * {
     border-radius: 10px;
     max-width: 20%;
+}
+
+.quantity-select {
+    text-align: center;
+    background: var(--light-grayish-blue);
+    padding: 1% 2%;
+    border-radius: 10px;
+    flex-basis: 35%;
+}
+
+.quantity-select button, .quantity-select input {
+    border: none;
+    background-color: transparent;
+}
+
+.quantity-select input {
+    width: 7%;
+    font-weight: 700;
 }
 
 .nav-element::after {
@@ -112,7 +195,7 @@ a {
 
 #navbar {
     align-items: center;
-    border-bottom: 1px solid var(--light-grayish-blue);
+    border-bottom: 1px solid var(--grayish-blue);
     justify-content: space-between;
     padding: 4vh 0;
 }
@@ -146,6 +229,7 @@ a {
 }
 
 #content {
-    margin: 0 auto;
+    margin: 0 auto 10% auto;
     width: 80vw;
 }
+
