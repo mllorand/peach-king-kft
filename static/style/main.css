@@ -19,8 +19,9 @@ button, input {
     padding: 10px;
 }
 
-#navbar, #nav-tabs, #nav-tabs ul, #cart-profile-container, .main-content, .photo-gallery, .description {
+#navbar, #nav-tabs, #nav-tabs ul, #cart-profile-container {
     display: flex;
+
 }
 
 #navbar {
