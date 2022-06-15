@@ -68,12 +68,25 @@
                 <button class="add-to-cart-btn"><img id="cart-icon" src="{{ url_for('static', filename='images/icon-cart.svg') }}">Add to cart</button>
             </div>
         </div>
-
-        <div class="cart-modal">
-            <h1 id="cart-modal-header">Cart</h1>
-
+    </div>
+</div>
+<div class="cart-modal">
+    <div class="cart-header-container">
+        <h1 id="cart-modal-header">Cart</h1>
+    </div>
+    <div class="cart-content-container">
+        <img src="{{ url_for('static', filename='images/image-product-1-thumbnail.jpg') }}" id="cart-product-picture">
+        <div class="cart-product-description">
+            <p>Fall Limited edition Sneakers</p>
+            <div class="cart-product-price-container">
+                <p class="cart-product-quantity">$125 * 3</p>
+                <p class="cart-product-price">$375</p>
+            </div>
         </div>
-
+        <img src="{{ url_for('static', filename='images/icon-delete.svg') }}" id="cart-delete-icon">
+    </div>
+    <div class="checkout-btn-container">
+        <button type="button" id="checkout-btn">Checkout</button>
     </div>
 </div>
 
