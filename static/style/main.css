@@ -236,6 +236,11 @@ a {
     flex-basis: 8%;
 }
 
+#cart-icon {
+    margin-right: 1vw;
+    filter: alpha();
+}
+
 #content {
     margin: 0 auto 10% auto;
     width: 80vw;
