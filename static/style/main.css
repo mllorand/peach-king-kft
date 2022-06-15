@@ -293,6 +293,11 @@ a {
     width: clamp(15px, 2vw, 25px);
 }
 
+#cart:hover {
+    filter: brightness(1.5);
+    transition: 0.2s;
+}
+
 #cart-profile-container {
     align-items: center;
     justify-content: space-between;
