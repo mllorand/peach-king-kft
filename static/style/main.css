@@ -43,7 +43,7 @@ a {
 }
 
 .add-to-cart-btn:hover {
-    opacity: 0.5;
+    opacity: 0.8;
     transition: 0.3s;
     box-shadow: 0 20px 10px var(--pale-orange);
 }
@@ -175,8 +175,9 @@ a {
 }
 
 .quantity-select input {
-    width: 7%;
     font-weight: 700;
+    text-align: center;
+    width: 10%;
 }
 
 .nav-element::after {
@@ -198,6 +199,7 @@ a {
     border-bottom: 1px solid var(--grayish-blue);
     justify-content: space-between;
     padding: 4vh 0;
+    height: 5vh;
 }
 
 #logo {
@@ -215,7 +217,13 @@ a {
 }
 
 #avatar {
-    width: clamp(20px, 5vw, 50px);
+    width: clamp(18px, 4vw, 50px);
+}
+
+#avatar:hover {
+    border: 3px orange solid;
+    border-radius: 50%;
+    width: clamp(17px, 3vw, 47px);
 }
 
 #cart {
